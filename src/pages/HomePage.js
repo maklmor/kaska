@@ -1,14 +1,15 @@
-import { useState } from 'react'
 import cx from 'classnames'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Checkboxes } from '../components/Checkboxes'
 import { TextField } from '../components/TextField'
-import { SLEEPING_OPTIONS_ITEMS } from '../staticData'
-import { isNullOrEmpty } from '../utils'
+import { ERROR_MESSAGE, SLEEPING_OPTIONS_ITEMS } from '../staticData'
+import { isNullOrEmpty, sendForm } from '../utils'
 import './HomePage.css'
 
 export const HomePage = () => {
   const [total, setTotal] = useState(0)
+  const [errorCode, setErrorCode] = useState(0)
   const [isFormValid, setIsFormValid] = useState(true)
   const navigate = useNavigate()
 
@@ -21,7 +22,14 @@ export const HomePage = () => {
 
     console.log(formData, formJson, Object.values(formJson).find(isNullOrEmpty) === undefined)
 
-    if (!validateForm(formJson)) return // This prevents user from sending a faulty form
+    if (!validateForm(formJson)) { // This prevents user from sending a faulty form
+      setErrorCode(1)
+      return
+    }
+    if (!sendForm(formJson)) {
+      setErrorCode(2)
+      return
+    }
     navigate('/confirmation')
   }
 
@@ -46,7 +54,7 @@ export const HomePage = () => {
         </div>
         <button type="submit">PRIDEM SA ROZJEBAT</button>
       </form>
-      <h4 className={cx('validation-error-message', { hidden: isFormValid })}>Formular nebol vyplneny spravne</h4>
+      <h4 className={cx('error-message', { hidden: isFormValid })}>{ERROR_MESSAGE[errorCode]}</h4>
 
     </div>
   )
