@@ -1,0 +1,11 @@
+h1 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.validation-error-message {
+  color: red;
+}
