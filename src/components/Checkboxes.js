@@ -8,9 +8,9 @@ export const Checkboxes = props => {
   }
 
   const renderCheckbox = item => (
-    <label>
+    <label key={item.value} >
       {item.title}
-      <input name={item.value} type='checkbox' onChange={onChange || payment} key={item.value} />
+      <input name={item.value} type='checkbox' onChange={onChange || payment} />
     </label>
   )
 
