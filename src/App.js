@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter  basename={process.env.PUBLIC_URL} >
       <Routes>
-        <Route index element={<HomePage />} />
-        <Route path='confirmation' element={<ConfirmationPage />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/confirmation' element={<ConfirmationPage />} />
       </Routes>
     </BrowserRouter>
   );
