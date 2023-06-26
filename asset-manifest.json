@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kaska/static/css/main.a980fcc6.css",
-    "main.js": "/kaska/static/js/main.dd5d9be0.js",
-    "static/js/787.43da8df8.chunk.js": "/kaska/static/js/787.43da8df8.chunk.js",
-    "index.html": "/kaska/index.html",
-    "main.a980fcc6.css.map": "/kaska/static/css/main.a980fcc6.css.map",
-    "main.dd5d9be0.js.map": "/kaska/static/js/main.dd5d9be0.js.map",
-    "787.43da8df8.chunk.js.map": "/kaska/static/js/787.43da8df8.chunk.js.map"
+    "main.css": "http://localhost:3000/static/css/main.a980fcc6.css",
+    "main.js": "http://localhost:3000/static/js/main.d2d0af28.js",
+    "static/js/787.2909dc06.chunk.js": "http://localhost:3000/static/js/787.2909dc06.chunk.js",
+    "index.html": "http://localhost:3000/index.html",
+    "main.a980fcc6.css.map": "http://localhost:3000/static/css/main.a980fcc6.css.map",
+    "main.d2d0af28.js.map": "http://localhost:3000/static/js/main.d2d0af28.js.map",
+    "787.2909dc06.chunk.js.map": "http://localhost:3000/static/js/787.2909dc06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a980fcc6.css",
-    "static/js/main.dd5d9be0.js"
+    "static/js/main.d2d0af28.js"
   ]
 }
