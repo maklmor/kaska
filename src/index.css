@@ -7,7 +7,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     /* user added global css */
-    font-family: "Consolas", monospace;
+    /* font-family: "Consolas", monospace; */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 1.2em;
     color: rgb(255, 255, 255);
     background-color: #1B1E20;
