@@ -7,6 +7,7 @@ import { ERROR_MESSAGE, FOOD_DATA, SLEEPING_OPTIONS_ITEMS } from '../staticData'
 import { getCounter, isNullOrEmpty, sendForm, updateCounter } from '../utils'
 import { Radios } from '../components/Radios'
 import './HomePage.css'
+import { ImageCube } from '../components/ImageCube'
 
 export const HomePage = () => {
   const [total, setTotal] = useState(0)
@@ -61,12 +62,13 @@ export const HomePage = () => {
         <div className='total'>
           <h2>{`${total}€`}</h2>
         </div>
+        <h2>Na co sa mozte tesit:</h2>
+        <ImageCube />
         <div className='submit-button-div'>
           <h4 className={cx('error-message', { hidden: isFormValid })}>{ERROR_MESSAGE[errorCode]}</h4>
           <button className='submit' type="submit">PRIDEM SA ROZJEBAT</button>
         </div>
       </form>
-
     </div>
   )
 }

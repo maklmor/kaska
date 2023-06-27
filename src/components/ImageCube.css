@@ -1,0 +1,98 @@
+/* * {
+  box-sizing: border-box;
+  transition: 0.3s;
+} */
+/* html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+} */
+.scene {
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin: 100px 0;
+}
+.scene:hover {
+  transform: scale(1.5);
+}
+.scene:hover .side {
+  opacity: 1;
+}
+.cube {
+  transform-style: preserve-3d;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: rotate 10s ease-in-out infinite;
+  transform-origin: center center;
+}
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+  opacity: 0.95;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back {
+  transform: translateZ(-100px) rotateX(180deg);
+  background-image: url(https://im9.cz/sk/iR/importprodukt-orig/546/5465a6e19bd5fac3233f4cdf7c62bac0--mmf400x400.jpg);
+}
+.left {
+  transform: translateX(-100px) rotateY(90deg);
+  background-image: url(https://www.shutterstock.com/shutterstock/photos/300525191/display_1500/stock-photo-money-and-drugs-marijuana-on-white-background-square-300525191.jpg);
+}
+.right {
+  transform: translateX(100px) rotateY(90deg);
+  background-image: url(https://i.pinimg.com/originals/f6/9a/14/f69a14ca5c5ec6750885843fc27a82b6.jpg);
+}
+.top {
+  transform: translateY(-100px) rotateX(90deg);
+  background-image: url(https://www.respectmyregion.com/wp-content/uploads/2022/06/Piece-of-the-Week-Waterfall-Bong-working.jpg);
+}
+.bottom {
+  transform: translateY(100px) rotateX(270deg);
+  background-image: url(https://image.made-in-china.com/202f0j00CokfbFElLMcO/18-Inch-Hamburger-BBQ-Grill-Square-BBQ-Grill.jpg);
+}
+.front {
+  transform: translateZ(100px);
+  background-image: url(https://i.natgeofe.com/n/30d0745d-d7b0-4212-a2a8-f169989cca9e/MM9911_220416_01783.jpg?w=413&h=276);
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0);
+ }
+  12.5% {
+    transform: rotateY(90deg);
+ }
+  25% {
+    transform: rotateY(270deg);
+ }
+  37.5% {
+    transform: rotateY(270deg);
+ }
+  50% {
+    transform: rotateY(360deg);
+ }
+  62.5% {
+    transform: rotateX(90deg);
+ }
+  75% {
+    transform: rotateX(180deg);
+ }
+  87.5% {
+    transform: rotateX(270deg);
+ }
+  100% {
+    transform: rotateX(360deg);
+ }
+}
