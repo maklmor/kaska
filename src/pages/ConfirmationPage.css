@@ -1,0 +1,33 @@
+h1 {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.confirmation-text {
+  /* display: flex;
+  justify-self: center; */
+  text-align: center;
+}
+
+.money-text {
+  /* display: flex;
+  justify-self: center; */
+  text-align: center;
+}
+
+.iban {
+  text-align: center;
+  padding: 6px 0 10px;
+  border: 1px solid #5675cc;
+  font-size: 0.93em;
+}
+
+.whole-page {
+  margin: 0 12px;
+}
+
+

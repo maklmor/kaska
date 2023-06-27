@@ -1,4 +1,4 @@
-
+import './Checkboxes.css'
 
 export const Checkboxes = props => {
   const { fieldName, items, onChange, paymentHandle } = props
@@ -16,8 +16,10 @@ export const Checkboxes = props => {
 
   return (
     <div className='checkboxes' >
-      <div className='fieldName'>{fieldName}</div>
-      {items.map(renderCheckbox)}
+      <div className='title'>{fieldName}</div>
+      <div className='items'>
+        {items.map(renderCheckbox)}
+      </div>
     </div>
   )
 }

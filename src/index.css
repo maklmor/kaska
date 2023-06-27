@@ -8,7 +8,8 @@ body {
 
     /* user added global css */
     font-family: "Consolas", monospace;
-    color: white;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
     background-color: #1B1E20;
 
   }

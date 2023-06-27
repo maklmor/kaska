@@ -1,0 +1,6 @@
+.checkboxes .items{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
