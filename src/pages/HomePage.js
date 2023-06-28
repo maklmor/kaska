@@ -6,8 +6,9 @@ import { TextField } from '../components/TextField'
 import { ERROR_MESSAGE, FOOD_DATA, SLEEPING_OPTIONS_ITEMS } from '../staticData'
 import { getCounter, isNullOrEmpty, sendForm, updateCounter } from '../utils'
 import { Radios } from '../components/Radios'
-import './HomePage.css'
 import { ImageCube } from '../components/ImageCube'
+
+import './HomePage.css'
 
 export const HomePage = () => {
   const [total, setTotal] = useState(0)
@@ -50,7 +51,9 @@ export const HomePage = () => {
   return (
     <div className='whole-page'>
       <h1>Operacia: Kaska</h1>
-      <h3>7. - 9.7.2023, Jasenska dolina</h3>
+      <h3>14. - 16.7.2023, Jasenska dolina</h3>
+      <img className='date-change-warning' src='FIRE_30deg.gif' alt='POZOR !!! ZMENA DATUMU' />
+
 
       <form method='post' onSubmit={handleSubmitClick}>
         <div className='text-fields'>

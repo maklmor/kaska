@@ -12,6 +12,10 @@ h3 {
   margin: 0 12px;
 }
 
+.date-change-warning {
+  width: 100% ;
+}
+
 .text-fields {
   margin: 23px 0;
 }
