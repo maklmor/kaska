@@ -1,10 +1,10 @@
 export const SLEEPING_OPTIONS_ITEMS = [
  {
-  title: 'Noc 7.7.',
+  title: 'Noc 14.7.',
   value: 'fridayNight',
  },
  {
-  title: 'Noc 8.7.',
+  title: 'Noc 15.7.',
   value: 'saturdayNight',
  },
 ]
@@ -18,7 +18,7 @@ export const ERROR_MESSAGE = {
 export const FOOD_DATA = [
   {
     fieldName: 'fridayEveningFood',
-    title: 'Vecera piatok (7.7.)',
+    title: 'Vecera piatok (14.7.)',
     defaultValue: 'foodNull',
     items: [
       {
@@ -35,7 +35,7 @@ export const FOOD_DATA = [
   },
   {
     fieldName: 'saturdayLunchFood',
-    title: 'Obed/ ranajky sobota (8.7.)',
+    title: 'Obed/ ranajky sobota (15.7.)',
     defaultValue: 'foodNull',
     items: [
       {
@@ -62,7 +62,7 @@ export const FOOD_DATA = [
   },
   {
     fieldName: 'saturdayEveningFood',
-    title: 'Vecera sobota (8.7.)',
+    title: 'Vecera sobota (15.7.)',
     defaultValue: 'foodNull',
     items: [
       {
