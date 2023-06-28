@@ -60,7 +60,7 @@ export const HomePage = props => {
           <TextField fieldName='Meno:' />
           <TextField fieldName='Kontakt:' />
         </div>
-        <Checkboxes fieldName={`Lôžka:  (ostava ${numberOfRegisteredLabel} z 32)`} items={SLEEPING_OPTIONS_ITEMS} paymentHandle={setTotal} />
+        <Checkboxes fieldName={`Lôžka:  (ostava ${numberOfRegisteredLabel} posteli)`} items={SLEEPING_OPTIONS_ITEMS} paymentHandle={setTotal} />
         {FOOD_DATA.map(day => <Radios fieldName={day.fieldName} data={day} paymentHandle={setTotal} key={day.fieldName} />)}
         <div className='total'>
           <h2>{`${total}€`}</h2>
