@@ -29,10 +29,10 @@ h3 {
 
 .submit-button-div {
   display: flex;
-  margin: 10px 0 50px;
+  margin: 10px 0;
+  padding-bottom: 20px;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .error-message {

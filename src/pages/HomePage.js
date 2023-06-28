@@ -10,7 +10,7 @@ import { ImageCube } from '../components/ImageCube'
 
 import './HomePage.css'
 
-export const HomePage = () => {
+export const HomePage = props => {
   const [total, setTotal] = useState(0)
   const [errorCode, setErrorCode] = useState(0)
   const [isFormValid, setIsFormValid] = useState(true)
@@ -34,12 +34,12 @@ export const HomePage = () => {
       setErrorCode(1)
       return
     }
-    if (!sendForm(formJson)) {
+    if (!sendForm({...formJson, total })) {
       setErrorCode(2)
       return
     }
     updateCounter(numberOfRegistered + 1)
-    navigate('/confirmation')
+    navigate('/confirmation', { replace: false, state: { total }})
   }
 
   const validateForm = formJson => {
