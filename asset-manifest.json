@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kaska/static/css/main.ca2b068a.css",
+    "main.css": "/kaska/static/css/main.9a82c239.css",
     "main.js": "/kaska/static/js/main.5e207edc.js",
     "static/js/787.2909dc06.chunk.js": "/kaska/static/js/787.2909dc06.chunk.js",
     "index.html": "/kaska/index.html",
-    "main.ca2b068a.css.map": "/kaska/static/css/main.ca2b068a.css.map",
+    "main.9a82c239.css.map": "/kaska/static/css/main.9a82c239.css.map",
     "main.5e207edc.js.map": "/kaska/static/js/main.5e207edc.js.map",
     "787.2909dc06.chunk.js.map": "/kaska/static/js/787.2909dc06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca2b068a.css",
+    "static/css/main.9a82c239.css",
     "static/js/main.5e207edc.js"
   ]
 }
