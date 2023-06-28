@@ -45,27 +45,27 @@
 }
 .back {
   transform: translateZ(-100px) rotateX(180deg);
-  background-image: url(https://im9.cz/sk/iR/importprodukt-orig/546/5465a6e19bd5fac3233f4cdf7c62bac0--mmf400x400.jpg);
+  background-image: url(https://www.shutterstock.com/shutterstock/photos/300525191/display_1500/stock-photo-money-and-drugs-marijuana-on-white-background-square-300525191.jpg); /*weed*/
 }
 .left {
   transform: translateX(-100px) rotateY(90deg);
-  background-image: url(https://www.shutterstock.com/shutterstock/photos/300525191/display_1500/stock-photo-money-and-drugs-marijuana-on-white-background-square-300525191.jpg);
+  background-image: url(https://i.pinimg.com/originals/f6/9a/14/f69a14ca5c5ec6750885843fc27a82b6.jpg); /*musik*/
 }
 .right {
   transform: translateX(100px) rotateY(90deg);
-  background-image: url(https://i.pinimg.com/originals/f6/9a/14/f69a14ca5c5ec6750885843fc27a82b6.jpg);
+  background-image: url(https://im9.cz/sk/iR/importprodukt-orig/546/5465a6e19bd5fac3233f4cdf7c62bac0--mmf400x400.jpg); /*koniferum*/
 }
 .top {
   transform: translateY(-100px) rotateX(90deg);
-  background-image: url(https://www.respectmyregion.com/wp-content/uploads/2022/06/Piece-of-the-Week-Waterfall-Bong-working.jpg);
+  background-image: url(https://i.natgeofe.com/n/30d0745d-d7b0-4212-a2a8-f169989cca9e/MM9911_220416_01783.jpg?w=413&h=276); /*shrooms*/
 }
 .bottom {
   transform: translateY(100px) rotateX(270deg);
-  background-image: url(https://image.made-in-china.com/202f0j00CokfbFElLMcO/18-Inch-Hamburger-BBQ-Grill-Square-BBQ-Grill.jpg);
+  background-image: url(https://image.made-in-china.com/202f0j00CokfbFElLMcO/18-Inch-Hamburger-BBQ-Grill-Square-BBQ-Grill.jpg); /*grill*/
 }
 .front {
   transform: translateZ(100px);
-  background-image: url(https://i.natgeofe.com/n/30d0745d-d7b0-4212-a2a8-f169989cca9e/MM9911_220416_01783.jpg?w=413&h=276);
+  background-image: url(https://www.respectmyregion.com/wp-content/uploads/2022/06/Piece-of-the-Week-Waterfall-Bong-working.jpg); /*founou*/
 }
 @keyframes rotate {
   0% {
